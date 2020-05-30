@@ -1,0 +1,159 @@
+/* GERAL =============================================================================== */
+body {
+    background-color: #e4e4e4;
+    height: 100%;
+    padding-top: 56px;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+p {
+    color: black;
+}
+
+.white-paragraph {
+    color: white;
+}
+
+.title {
+    color: #c0de6c;
+}
+
+.photo-border {
+    border: 1px solid #EEF52A;
+}
+
+.card {
+    width: 260px;
+    height: 450px;
+    margin-left: 20px;
+}
+
+.donate-box {
+    border: 1px solid #EEF52A;
+}
+
+/* .gradient {
+    background-color: #c0de6c; 
+    background-image: radial-gradient(#c0de6c 5%, #c0de6cc7 15%, white 60%);
+} */
+
+/* Nav Bar ===============================================================================*/
+nav {
+    height: 56px;
+    background-color: #1B2531;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #c0de6c;
+}
+
+.nav-link.active {
+    color: #c0de6c;
+}
+
+/* Footer =============================================================================== */
+footer {
+    background-color: #1B2531;
+    color: white;
+}
+
+/* .vl {
+    border-left: 1px solid #ffffff;
+    height: 500px;
+} */
+
+
+
+/* Register screens ===============================================================================*/
+.register {
+    /* width: 100%; */
+    /* height: calc(100vh - 60px); */
+    height: 100%;
+    /* background-color: #7DBFCD; */
+    background: linear-gradient(0deg, #c0de6c 80%, #4b84ff 20%);
+    /* background: repeating-linear-gradient(#1B2531, white); */
+}
+
+.register-center {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 50px;
+}
+
+.register-link {
+    color: rgb(134, 134, 134);
+}
+
+.register-link:hover {
+    color: #c0de6c;
+}
+
+.register-button {
+    background-color: #c0de6c;
+}
+
+/* img{
+    max-width:180px;
+} */
+  
+/* input[type=file] {
+    padding:10px;
+    background:#2d2d2d;
+} */
+
+.custom-pointer {
+    cursor: pointer;
+    /* Style as you please, it will become the visible UI component. */
+ }
+ 
+ #upload-photo {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+ }
+
+/*Scrowbar =============================================================================== */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #c0de6c;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); /*For the "inset" look only*/
+}
+
+::-webkit-scrollbar-track-piece {
+    background: rgb(219, 219, 219);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* cores */
+#azul {
+    background: #7DBFCD ;
+}
+#verde {
+    background: #c0de6c;
+}
+#preto {
+    background: #1B2531;
+}
+#cinza {
+    background: #F2F3F7;
+}

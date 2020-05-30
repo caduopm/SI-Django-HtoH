@@ -1,0 +1,80 @@
+{% extends 'navigation.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+      <!-- banner -->
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <img class="img-fluid" src="{% static 'images/others/banner_dog_cats.png' %}">
+        </div>
+      </div>
+      <!-- opções de navegação -->
+      <div class="row mt-4">
+        <div class="col-md-4 col-xs-12 text-center">
+          <i class="fas fa-compass fa-5x"></i>
+          <h5>EXPLORAR</h5>
+          <P>Encontre um amigo ou amiga, faça doações e nos ajude nessa causa</P>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <i class="fas fa-chart-bar fa-5x"></i>
+          <h5>GRÁFICOS</h5>
+          <P>Visualize nossos gráficos de acompanhamento de cães e gatos pela sua cidade</P>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <i class="fas fa-info-circle fa-5x"></i>
+          <h5>SOBRE</h5>
+          <P>Quer saber um pouco aonde tudo começou? Venha no conhecer</P>
+        </div>
+      </div>
+      <!-- divisão wave -->
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <img class="img-fluid float-right" src="{% static 'images/others/wave_green_blue.jpg' %}">
+        </div>
+      </div>
+      <!-- Outros textos -->
+      <div class="row">
+        <div class="col-md-9 col-xs-12">
+          <p>O GAAR - Grupo de apoio ao animal de rua - luta a anos contra o abandono e maus-tratos de cães 
+            e gatos de Campinas e região, em um trabalho continuo de castração, cuidados básicos e busca de lares 
+            para eles, além de difundir a conscientisação para guarda responsável e bem estar animal.
+          </p>
+          <p>
+            Por isso fazemos aqui este apelo para que você se junte a nós e nos ajude nas despesas veterinarias e de 
+            cuidados básicos, para podermos resgatar, tratar, castrar e proteger mais animais, até que sejam doados 
+            para pessoas responsáveis.
+          </p>
+        </div>
+        <div class="col-md-3 col-xs-12 d-flex align-items-center">
+          <img class="img-fluid float-right" src="{% static 'images/Icons/logo_ong.jpg' %}">
+        </div>
+      </div>
+      <!-- Patrocinadores -->
+      <div class="row">
+        <div class="col-md-12 col-xs-12 text-center">
+          <h4 class="title">ALGUNS DE NOSSOS PATROCINADORES</h4>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="{% static 'images/Icons/logo_pedigree.png' %}" class="rounded-circle" width="235" height="235">
+          <h5>PEDIGREE</h5>
+          <P>Clique aqui para fazer suas compas online pelo site da Pedigree.</P>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="{% static 'images/Icons/logo_whiskas.jpg' %}" class="rounded-circle" width="235" height="235">
+          <h5>WHISKAS</h5>
+          <P>A ração mais indicada para o seu gato e gata. Encontre a loja mais próxima à você e faça seu cichinho mais feliz.</P>
+        </div>
+        <div class="col-md-4 col-xs-12 text-center">
+          <img src="{% static 'images/Icons/logo_cobase.png' %}" class="rounded-circle" width="235" height="235">
+          <h5>COBASI</h5>
+          <P>A cobassi conta com diversos produtos para você e seu pet. Visite a loja mais próxima de você.
+          </P>
+        </div>
+      </div>
+    </div>
+
+{% endblock content %}

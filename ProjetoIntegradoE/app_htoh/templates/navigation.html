@@ -1,0 +1,112 @@
+<!--{% load static from staticfiles %}-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Happy to Help</title>
+    <script src="{% static 'script.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <!-- link Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- link FontAwesome-->
+    <link href="{% static 'fontawesome/css/all.css' %}" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Image and text -->
+    <nav class="navbar fixed-top">
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">
+                <img src="{% static 'images/Icons/logo_htoh_green.fw.png' %}" width="60" height="20">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'index' %}">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'adopt' %}">Adotar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'donate' %}">Doar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'find' %}">Encontrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'chart' %}">Gráficos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">Quem somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login' %}">LOGIN</a>
+           </li>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+    </nav>
+
+    {% block content %}
+    {% endblock content %}
+
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-2 pb-3">
+
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-2 col-xs-12">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Redes Sociais</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fab fa-instagram-square fa-2x"></i>
+                            Instagran
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                            FaceBook
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter-square fa-2x"></i>
+                            Twitter
+                        </li>
+                    </ul>
+                  </div>
+
+                  <!-- <div class="vl"></div> -->
+
+                  <div class="col-md-5 mx-auto text-center">
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Nosso App</h5>
+                    <i class="fas fa-mobile-alt app-icon fa-5x"></i>
+                    <i class="fab fa-apple app-icon fa-2x"></i>
+                    <i class="fab fa-google-play app-icon fa-2x"></i>
+                    <p class="white-paragraph">Baixe nosso APP para ter acesso a outras funcionalidades!</p>
+                  </div>
+
+                  <!-- <div class="vl"></div> -->
+
+                <div class="col-md-5 mx-auto text-center">
+                  <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Participe da nossa hashtag</h5>
+                  <img src="{% static 'images/Icons/adotei.jpg' %}" class="rounded-circle" width="120" height="120">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

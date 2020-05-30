@@ -1,0 +1,47 @@
+{% extends 'navigation.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <!-- <div class="row register d-flex justify-content-center"> -->
+    <div class="row register justify-content-center">
+        <div class="col-md-5 col-xs-12 shadow register-center">
+
+            <div class="row">
+                <img src="./img/Icons/logo_htoh_green.fw.png" class="mx-auto d-block mt-4" width="350" height="100">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-xs-12 text-center">
+                    <form class="mt-4 mb-4" action="/exemplo.js">
+                        <div class="form-group">
+                            <label class="custom-pointer" for="upload-photo">
+                                <img id="blah" for="upload-photo" src="./img/Icons/upload_img.png" alt="your image" width="150px" height="150px" />
+                            </label>
+                            <input type='file' onchange="readURL(this);" id="upload-photo"/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" placeholder="CELULAR" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="nasc-date">Data de nascimento:</label>
+                            <input type="date" class="form-control" id="nasc-date">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-secondary btn-lg btn-block ">
+                                CADASTRAR
+                            </button>
+                        </div>
+                    </form>
+                    <a href="./index.html" class="btn btn-dark btn-lg btn-block ">
+                        CANCELAR
+                    </a>
+                    <h1 class="title mt-3">3/3</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,59 @@
+{% extends 'navigation.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- <div class="row register d-flex justify-content-center"> -->
+    <div class="row register justify-content-center">
+        <div class="col-md-5 col-xs-12 shadow register-center">
+
+            <div class="row">
+                <img src="./img/Icons/logo_htoh_green.fw.png" class="mx-auto d-block mt-4" width="350" height="100">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-xs-12 text-center">
+                    <form class="mt-4 mb-4" action="/exemplo.js">
+                        <div class="form-group">
+                            <input type="text" placeholder="NOME FANTASIA" class="form-control" id="name-ong">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="RAZÃO SOCIAL" class="form-control" id="r-social">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-MAIL" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="CONFIRMAR E-MAIL" class="form-control" id="c-email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="SENHA" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="CONFIRMAR SENHA" class="form-control" id="c-pwd">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <button type="submit" class="btn btn-secondary btn-lg btn-block ">
+                                    <i class="fas fa-arrow-left mr-3"></i>
+                                </button>
+                            </div>
+                            <div class="col-sm-6">
+                                <button type="submit" class="btn btn-secondary btn-lg btn-block ">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="./index.html" class="btn btn-dark btn-lg btn-block ">
+                        CANCELAR
+                    </a>
+                    <h1 class="title mt-3">2/3</h1>
+                    <a class="register-link" href="./register_ong_2.html">temporario</a>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,54 @@
+{% extends 'navigation.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- <div class="row register d-flex justify-content-center"> -->
+    <div class="row register justify-content-center">
+        <div class="col-md-5 col-xs-12 shadow register-center">
+
+            <div class="row">
+                <img src="./img/Icons/logo_htoh_green.fw.png" class="mx-auto d-block mt-4" width="350" height="100">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 text-center">
+                    <h4 class="title mt-3">CADASTRE-SE AGORA!!!</h4>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-xs-12 text-center">
+                    <form class="mt-4 mb-4" action="/exemplo.js">
+                        <div class="form-group">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Selecione uma opção de conta!</option>
+                              <option>CPF - Usuário</option>
+                              <option>CNPJ - ONG</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <button type="submit" class="btn btn-secondary btn-lg btn-block ">
+                                    <i class="fas fa-arrow-left mr-3"></i>
+                                </button>
+                            </div>
+                            <div class="col-sm-6">
+                                <button type="submit" class="btn btn-secondary btn-lg btn-block ">
+                                    <i class="fas fa-arrow-right ml-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="./index.html" class="btn btn-dark btn-lg btn-block ">
+                        CANCELAR
+                    </a>
+                    <h1 class="title mt-3">1/3</h1>
+                    <a class="register-link" href="./register_user_1.html">temporario user</a>
+                    <a class="register-link" href="./register_ong_1.html">temporario ong</a>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}

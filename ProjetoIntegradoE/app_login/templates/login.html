@@ -1,0 +1,40 @@
+{% extends 'navigation.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <!-- <div class="row register d-flex justify-content-center"> -->
+    <div class="row register justify-content-center">
+        <div class="col-md-5 col-xs-12 shadow register-center">
+
+            <div class="row">
+                <img src="./img/Icons/logo_htoh_green.fw.png" class="mx-auto d-block mt-4" width="350" height="100">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 text-center">
+                    <h4 class="title mt-3">ENTRAR EM SUA CONTA?</h4>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-xs-12 text-center">
+                    <!-- <form class="mt-4 mb-4" action="/exemplo.js"> -->
+                    <form class="mt-4 mb-4">
+                        <div class="form-group">
+                            <input type="email" placeholder="E-MAIL" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="SENHA" class="form-control" id="pwd">
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-lg btn-block ">ENTRAR</button>
+                    </form>
+                    <p><a class="register-link" href="./reset_password.html">Esqueceu sua senha?</a></p>
+                    <p><a class="register-link" href="./register.html">Se cadastrar aqui!!!</a></p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}
