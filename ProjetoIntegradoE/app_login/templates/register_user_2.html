@@ -9,14 +9,14 @@
         <div class="col-md-5 col-xs-12 shadow register-center">
 
             <div class="row">
-                <img src="./images/Icons/logo_htoh_green.fw.png" class="mx-auto d-block mt-4" width="350" height="100">
+                <img src="{% static '/images/Icons/logo_htoh_green.fw.png' %}" class="mx-auto d-block mt-4" width="350" height="100">
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-6 col-xs-12 text-center">
                     <form class="mt-4 mb-4" action="/exemplo.js">
                         <div class="form-group">
                             <label class="custom-pointer" for="upload-photo">
-                                <img id="blah" for="upload-photo" src="./images/Icons/upload_img.png" alt="your image" width="150px" height="150px" />
+                                <img id="blah" for="upload-photo" src="{% static '/images/Icons/upload_img.png' %}" alt="your image" width="150px" height="150px" />
                             </label>
                             <input type='file' onchange="readURL(this);" id="upload-photo"/>
                         </div>
