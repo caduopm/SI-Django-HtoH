@@ -1,69 +1,7 @@
-<!DOCTYPE html>
-<html>
+{% extends 'navigation.html' %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Happy to Help</title>
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="style.css">
-
-    <!-- link Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-    <!-- link FontAwesome-->
-    <link href="./fontawesome/css/all.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    <!-- Image and text -->
-    <nav class="navbar fixed-top">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link active" href="./index.html">
-                    <img src="./img/Icons/logo_htoh_green.fw.png" width="60" height="20">
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Início</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./adopt.html">Adotar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./donate.html">Doar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./find.html">Encontrar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./charts.html">Gráficos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./about.html">Quem somos?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./login.html">LOGIN</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li> -->
-        </ul>
-    </nav>
+{% block content %}
     <div class="container">
         <div class="row mt-4 mb-4">
             <div class="col-sm-12 col-xs-12 text-center gradient">
@@ -143,7 +81,7 @@
         <div class="row">
             <!-- cards -->
             <div class="card shadow mb-4">
-                <img class="card-img-top" src="./img/animals/cat1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{% static 'images/animals/cat1.jpg' %}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Sr. Julgamento</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -157,7 +95,7 @@
             </div>
             <!-- cards -->
             <div class="card shadow mb-4">
-                <img class="card-img-top" src="./img/animals/cat2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{% static 'images/animals/cat2.jpg' %}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">O destruidor</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -170,7 +108,7 @@
             </div>
             <!-- cards -->
             <div class="card shadow mb-4">
-                <img class="card-img-top" src="./img/animals/cat3.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{% static 'images/animals/cat3.jpg' %}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Sr. Rabugento</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -183,7 +121,7 @@
             </div>
             <!-- cards -->
             <div class="card shadow mb-4">
-                <img class="card-img-top" src="./img/animals/dog1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{% static 'images/animals/dog1.jpg' %}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Verdade?</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -196,7 +134,7 @@
             </div>
             <!-- cards -->
             <div class="card shadow mb-4">
-                <img class="card-img-top" src="./img/animals/dog2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{% static 'images/animals/dog2.jpg' %}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Sr. Pirata</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -209,7 +147,7 @@
             </div>
             <!-- cards -->
             <div class="card shadow mb-4">
-                <img class="card-img-top" src="./img/animals/dog3.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{% static 'images/animals/dog3.jpg' %}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Da comida</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -222,7 +160,7 @@
             </div>
             <!-- cards -->
             <div class="card shadow mb-4">
-                <img class="card-img-top" src="./img/animals/bird1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{% static 'images/animals/bird1.jpg' %}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">To com vergonha</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -235,7 +173,7 @@
             </div>
             <!-- cards -->
             <div class="card shadow mb-4">
-                <img class="card-img-top" src="./img/animals/bird2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{% static 'images/animals/bird2.jpg' %}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Rap...</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -249,49 +187,4 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="page-footer font-small stylish-color-dark pt-2 pb-3">
-
-        <div class="container text-center text-md-left">
-            <div class="row">
-                <div class="col-md-2 col-xs-12">
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Redes Sociais</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <i class="fab fa-instagram-square fa-2x"></i>
-                            Instagran
-                        </li>
-                        <li>
-                            <i class="fab fa-facebook-square fa-2x"></i>
-                            FaceBook
-                        </li>
-                        <li>
-                            <i class="fab fa-twitter-square fa-2x"></i>
-                            Twitter
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- <div class="vl"></div> -->
-
-                <div class="col-md-5 mx-auto text-center">
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Nosso App</h5>
-                    <i class="fas fa-mobile-alt app-icon fa-5x"></i>
-                    <i class="fab fa-apple app-icon fa-2x"></i>
-                    <i class="fab fa-google-play app-icon fa-2x"></i>
-                    <p class="white-paragraph">Baixe nosso APP para ter acesso a outras funcionalidades!</p>
-                </div>
-
-                <!-- <div class="vl"></div> -->
-
-                <div class="col-md-5 mx-auto text-center">
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Participe da nossa hashtag</h5>
-                    <img src="./img/Icons/adotei.jpg" class="rounded-circle" width="120" height="120">
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-</body>
-
-</html>
+{% endblock content %}
