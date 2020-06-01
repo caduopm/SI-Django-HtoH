@@ -4,5 +4,5 @@ from .views import donate, donateType
 
 urlpatterns = [
     path('', donate, name='donate'),
-    path('/donate_type/', donateType, name='donateType'),
+    path('donate_type', donateType, name='donateType'),
 ]
